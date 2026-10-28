@@ -9,6 +9,12 @@ type PracticeAreaPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+// Every slug is pre-rendered at build time via generateStaticParams, so
+// there's no real dynamic data here — opt this route out of the instant-nav
+// Suspense requirement rather than wrap the whole (fully param-dependent)
+// page body in a loading boundary that would gain nothing.
+export const instant = false;
+
 export function generateStaticParams() {
   return allPracticeAreas.map((area) => ({ slug: area.slug }));
 }
