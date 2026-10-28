@@ -30,8 +30,7 @@ export default function PracticeAreasPage() {
             {allPracticeAreas.map((area) => (
               <div
                 key={area.slug}
-                id={area.slug}
-                className="scroll-mt-28 bg-cream-soft p-10 transition-colors duration-200 hover:bg-white"
+                className="bg-cream-soft p-10 transition-colors duration-200 hover:bg-white"
               >
                 <p className="text-xs font-medium text-muted-light">
                   {area.number}
@@ -43,7 +42,7 @@ export default function PracticeAreasPage() {
                   {area.description}
                 </p>
                 <Link
-                  href={`/practice-areas#${area.slug}`}
+                  href={`/practice-areas/${area.slug}`}
                   className="mt-6 inline-flex items-center gap-2 border-b border-ink pb-0.5 text-xs font-semibold uppercase tracking-[0.12em] text-ink transition-colors hover:border-accent hover:text-accent"
                 >
                   Learn More →
