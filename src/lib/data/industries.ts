@@ -16,7 +16,7 @@ export type WhyUsItem = {
 
 export const whyUsItems: WhyUsItem[] = [
   { number: "/01", text: "Flat-fee legal services with transparent pricing." },
-  { number: "/02", text: "Nationwide representation before the USPTO and TTAB." },
+  { number: "/02", text: "Nationwide representation before CIPO and the Trademarks Opposition Board." },
   { number: "/03", text: "Attorney-prepared filings — no paralegal-only work." },
   { number: "/04", text: "Full lifecycle management, from filing through 10-year renewals." },
 ];

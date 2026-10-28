@@ -18,7 +18,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "IP Counsel Group | U.S. Trademark Attorneys",
+    default: "IP Counsel Group | Canadian Trademark Attorneys",
     template: "%s | IP Counsel Group",
   },
   description:

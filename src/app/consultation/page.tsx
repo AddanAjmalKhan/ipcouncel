@@ -17,7 +17,7 @@ const contactRows = [
 ];
 
 const expectations = [
-  "30-minute call with a licensed U.S. trademark attorney.",
+  "30-minute call with a licensed Canadian trademark attorney.",
   "Preliminary review of your mark and business goals.",
   "Clear, flat-fee quote for any recommended work.",
   "No obligation, no sales pressure.",

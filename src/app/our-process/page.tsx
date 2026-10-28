@@ -8,7 +8,7 @@ import { fullProcessSteps, madridSteps } from "@/lib/data/process";
 export const metadata: Metadata = {
   title: "Our Process",
   description:
-    "Once your application is filed, we take over — every USPTO letter, every deadline, and every renewal for the life of your mark.",
+    "Once your application is filed, we take over — every examiner letter, every deadline, and every renewal for the life of your mark.",
 };
 
 export default function OurProcessPage() {
@@ -23,7 +23,7 @@ export default function OurProcessPage() {
             Ten years of protection.
           </>
         }
-        description="Once you engage us, we manage the entire USPTO process — through registration, through the 5-year Section 8, and through every 10-year renewal thereafter."
+        description="Once you engage us, we manage the entire process — through registration and through every 10-year renewal thereafter."
       />
 
       <section className="bg-cream-soft py-20 lg:py-28">
@@ -64,8 +64,8 @@ export default function OurProcessPage() {
               Madrid Protocol international filing.
             </h2>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-cream/60">
-              Extend your U.S. trademark to 130+ countries through a single
-              Madrid Protocol application filed via the USPTO and certified
+              Extend your Canadian trademark to 130+ countries through a single
+              Madrid Protocol application filed via CIPO and certified
               to WIPO. We manage the certification, country designations,
               and any office actions raised by member offices.
             </p>

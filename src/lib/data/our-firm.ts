@@ -1,11 +1,11 @@
 export const ourFirmServices: string[] = [
   "Federal Trademark Applications",
-  "USPTO Examination Responses",
+  "Examination Responses",
   "Office Action Defense",
   "Statement of Use Filings",
   "Trademark Renewals",
   "Trademark Monitoring",
-  "TTAB Proceedings",
+  "Opposition Board Proceedings",
   "Brand Enforcement",
   "Trademark Portfolio Management",
   "Madrid Protocol / International Protection",

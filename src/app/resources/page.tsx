@@ -7,7 +7,7 @@ import { resourceCards, faqItems } from "@/lib/data/resources";
 export const metadata: Metadata = {
   title: "Resources",
   description:
-    "Guides and resources on federal trademark filing, USPTO examination, and brand protection.",
+    "Guides and resources on federal trademark filing, trademark examination, and brand protection.",
 };
 
 export default function ResourcesPage() {
@@ -20,7 +20,7 @@ export default function ResourcesPage() {
             Trademark knowledge, <em className="italic">plainly explained.</em>
           </>
         }
-        description="Guides, FAQs, and reference material for entrepreneurs and in-house counsel navigating the U.S. trademark system."
+        description="Guides, FAQs, and reference material for entrepreneurs and in-house counsel navigating the Canadian trademark system."
       />
 
       <section className="bg-cream-soft py-20 lg:py-28">

@@ -16,7 +16,7 @@ export default function PracticeAreasSection() {
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-muted">
-            From U.S. registration to Madrid Protocol global filings and
+            From Canadian registration to Madrid Protocol global filings and
             lifecycle enforcement, we provide flat-fee legal representation
             for your brand assets.
           </p>

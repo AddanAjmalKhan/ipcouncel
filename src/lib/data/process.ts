@@ -9,25 +9,25 @@ export const processSteps: ProcessStep[] = [
     stage: "Filing → Registration",
     title: "Nationwide Federal Filing",
     description:
-      "TEAS Plus and TEAS Standard applications drafted, reviewed, and filed by a licensed U.S. trademark attorney.",
+      "Applications drafted, reviewed, and filed by a licensed Canadian trademark attorney.",
   },
   {
-    stage: "Year 5",
-    title: "Section 8 Declaration",
+    stage: "Publication",
+    title: "Opposition Monitoring",
     description:
-      "Between the 5th and 6th year we prepare and file your Section 8 Declaration of Use — miss it and the registration is cancelled.",
+      "Your mark is published in the Trademarks Journal. We monitor for oppositions during the statutory window and respond on your behalf.",
   },
   {
     stage: "Year 10",
-    title: "Section 8 & 9 Renewal",
+    title: "10-Year Renewal",
     description:
-      "Every ten years we file the combined renewal to maintain your federal registration indefinitely.",
+      "Every ten years we file the renewal to maintain your federal registration indefinitely.",
   },
   {
     stage: "Any Time",
     title: "Office Action Response",
     description:
-      "If the USPTO issues any refusal or procedural letter, we prepare the response, argue the case, and negotiate with the examiner.",
+      "If CIPO issues any refusal or procedural letter, we prepare the response, argue the case, and negotiate with the examiner.",
   },
 ];
 
@@ -50,21 +50,21 @@ export const fullProcessSteps: FullProcessStep[] = [
     step: "02",
     title: "Trademark Search & Legal Review",
     description:
-      "Comprehensive federal, state, and common-law search followed by a written attorney opinion on registrability and risk.",
+      "Comprehensive federal, provincial, and common-law search followed by a written attorney opinion on registrability and risk.",
     badge: "5–7 Business Days",
   },
   {
     step: "03",
-    title: "Attorney Filing of USPTO Application",
+    title: "Attorney Filing of Trademark Application",
     description:
-      "Your application is drafted, reviewed, and filed by a licensed U.S. trademark attorney using the correct filing basis and identification of goods.",
+      "Your application is drafted, reviewed, and filed by a licensed Canadian trademark attorney using the correct filing basis and identification of goods.",
     badge: "Filed Within 5 Days",
   },
   {
     step: "04",
-    title: "USPTO Examination",
+    title: "Trademark Examination",
     description:
-      "Your application is assigned to a USPTO examining attorney. Our firm monitors the docket and handles all correspondence on your behalf.",
+      "Your application is assigned to a CIPO examiner. Our firm monitors the docket and handles all correspondence on your behalf.",
     badge: "3–6 Months",
   },
   {
@@ -72,14 +72,14 @@ export const fullProcessSteps: FullProcessStep[] = [
     title: "Office Action Response (If Required)",
     description:
       "If the examiner issues any refusal, we prepare a full legal response — including cited case law, evidence of use, and examiner interviews if needed.",
-    badge: "Within USPTO Deadline",
+    badge: "Within Filing Deadline",
   },
   {
     step: "06",
     title: "Publication for Opposition",
     description:
-      "The mark is published in the Official Gazette. Third parties have 30 days to oppose. We monitor for oppositions and defend if any are filed.",
-    badge: "30-Day Window",
+      "The mark is published in the Trademarks Journal. Third parties have a statutory window to oppose. We monitor for oppositions and defend if any are filed.",
+    badge: "Opposition Window",
   },
   {
     step: "07",
@@ -92,8 +92,8 @@ export const fullProcessSteps: FullProcessStep[] = [
     step: "08",
     title: "Monitoring, Renewals & Lifecycle Care",
     description:
-      "We docket every deadline. Section 8 Declaration between year 5–6. Combined Section 8 & 9 renewal every 10 years. Continuous brand monitoring throughout.",
-    badge: "5- and 10-Year Filings",
+      "We docket every deadline. Renewal filed every 10 years to keep your registration in force. Continuous brand monitoring throughout.",
+    badge: "10-Year Renewal Filings",
   },
 ];
 
@@ -106,15 +106,15 @@ export type MadridStep = {
 export const madridSteps: MadridStep[] = [
   {
     label: "Base Filing",
-    title: "USPTO Application or Registration",
+    title: "CIPO Application or Registration",
     description:
-      "A valid U.S. application or registration is the foundation for a Madrid Protocol filing.",
+      "A valid Canadian application or registration is the foundation for a Madrid Protocol filing.",
   },
   {
     label: "Certification",
-    title: "USPTO Certification to WIPO",
+    title: "CIPO Certification to WIPO",
     description:
-      "The USPTO certifies your base mark and forwards the application to WIPO in Geneva.",
+      "CIPO certifies your base mark and forwards the application to WIPO in Geneva.",
   },
   {
     label: "Designation",

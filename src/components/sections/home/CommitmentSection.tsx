@@ -13,7 +13,7 @@ export default function CommitmentSection() {
             <em className="italic">we take over.</em>
           </h2>
           <p className="mt-6 max-w-sm text-base leading-relaxed text-cream/60">
-            You focus on your business. We handle every USPTO letter, every
+            You focus on your business. We handle every examiner letter, every
             deadline, and every renewal for the life of your mark.
           </p>
         </div>

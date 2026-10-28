@@ -21,7 +21,7 @@ export default function PracticeAreasPage() {
             Eleven disciplines. <em className="italic">One trademark firm.</em>
           </>
         }
-        description="Every service is delivered by a licensed U.S. trademark attorney. Core work is offered at a flat, one-time fee. Select an area for a detailed overview and typical engagement."
+        description="Every service is delivered by a licensed Canadian trademark attorney. Core work is offered at a flat, one-time fee. Select an area for a detailed overview and typical engagement."
       />
 
       <section className="bg-cream-soft py-20 lg:py-28">
@@ -63,7 +63,7 @@ export default function PracticeAreasPage() {
               One clear fee for the service.
             </h2>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted">
-              Our core trademark services — including U.S. applications,
+              Our core trademark services — including Canadian applications,
               Office Action responses, and Madrid Protocol global filings —
               are offered at a flat, one-time fee. You receive the full
               attorney engagement without hourly billing surprises.

@@ -3,12 +3,12 @@ export const siteConfig = {
   shortName: "IPCG",
   tagline: "Intellectual Property Counsel Group",
   description:
-    "A boutique trademark law firm dedicated exclusively to USPTO prosecution, Madrid Protocol global filings, federal registration, TTAB proceedings, and nationwide brand protection.",
+    "A boutique trademark law firm dedicated exclusively to trademark prosecution, Madrid Protocol global filings, federal registration, Trademarks Opposition Board proceedings, and nationwide brand protection.",
   phone: "819-900-2926",
   email: "info@ipcounselgroup.org",
   hours: "Mon–Fri, 8:30–4:30 ET",
   copyright: `© ${new Date().getFullYear()} IP Counsel Group Trademark Law. Attorney Advertising.`,
-  badge: "Nationwide USPTO Representation",
+  badge: "Nationwide Representation",
 };
 
 export type NavLink = {

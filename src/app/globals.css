@@ -21,6 +21,11 @@
   --font-sans: var(--font-inter);
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--color-cream);
   color: var(--color-ink);

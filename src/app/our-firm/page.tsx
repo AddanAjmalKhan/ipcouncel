@@ -8,7 +8,7 @@ import { ourFirmServices } from "@/lib/data/our-firm";
 export const metadata: Metadata = {
   title: "Our Firm",
   description:
-    "A boutique trademark law firm dedicated exclusively to USPTO prosecution and nationwide brand protection.",
+    "A boutique trademark law firm dedicated exclusively to trademark prosecution and nationwide brand protection.",
 };
 
 export default function OurFirmPage() {
@@ -50,9 +50,9 @@ export default function OurFirmPage() {
               paralegal, not a call center, not an automated form filler.
             </p>
             <p>
-              Once your application is filed with the USPTO, we take over
+              Once your application is filed, we take over
               the full process. We handle every examiner letter, every
-              Office Action, and every 5- and 10-year renewal for the life
+              Office Action, and every 10-year renewal for the life
               of your mark.
             </p>
           </div>

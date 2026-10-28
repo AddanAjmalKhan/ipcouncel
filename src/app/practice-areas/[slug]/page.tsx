@@ -108,8 +108,8 @@ export default async function PracticeAreaDetailPage({
                 </h3>
                 <p className="mt-4 text-base leading-relaxed text-muted">
                   From the moment you engage us, our firm becomes the
-                  correspondence attorney of record. We handle every USPTO
-                  letter, every Office Action, and every 5- and 10-year
+                  correspondence attorney of record. We handle every
+                  examiner letter, every Office Action, and every 10-year
                   renewal for the life of your mark.
                 </p>
                 <div className="mt-6">

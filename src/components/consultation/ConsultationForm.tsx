@@ -7,14 +7,14 @@ const legalMatters = [
   "Trademark Search & Clearance",
   "Office Action Response",
   "Madrid Protocol / Global Filing",
-  "Renewal / Section 8",
-  "TTAB Proceeding",
+  "Renewal",
+  "Opposition Board Proceeding",
   "Brand Enforcement",
   "Other",
 ];
 
 const fieldClasses =
-  "mt-3 w-full border-b border-cream/20 bg-transparent pb-3 text-sm text-cream placeholder:text-cream/30 focus:border-accent focus:outline-none";
+  "mt-3 w-full border-b border-cream/20 bg-transparent pb-3 text-base text-cream placeholder:text-cream/30 focus:border-accent focus:outline-none";
 
 const labelClasses =
   "block text-[11px] font-semibold uppercase tracking-[0.15em] text-cream/50";
@@ -26,7 +26,7 @@ export default function ConsultationForm() {
 
   if (submitted) {
     return (
-      <div className="bg-ink p-10 lg:p-12">
+      <div className="bg-ink p-6 sm:p-10 lg:p-12">
         <h3 className="font-serif text-2xl text-cream">Thank you.</h3>
         <p className="mt-3 text-sm leading-relaxed text-cream/60">
           We&apos;ve received your request and will be in touch shortly to
@@ -37,7 +37,7 @@ export default function ConsultationForm() {
   }
 
   return (
-    <div className="bg-ink p-10 lg:p-12">
+    <div className="bg-ink p-6 sm:p-10 lg:p-12">
       <h3 className="font-serif text-2xl text-cream">Schedule Consultation</h3>
 
       <form
@@ -125,7 +125,7 @@ export default function ConsultationForm() {
             id="message"
             name="message"
             rows={4}
-            className="mt-3 w-full border border-cream/20 bg-ink-light px-4 py-3 text-sm text-cream placeholder:text-cream/30 focus:border-accent focus:outline-none"
+            className="mt-3 w-full border border-cream/20 bg-ink-light px-4 py-3 text-base text-cream placeholder:text-cream/30 focus:border-accent focus:outline-none"
           />
         </div>
 

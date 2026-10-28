@@ -23,7 +23,7 @@ export default function Hero() {
       <Container className="relative py-16 lg:py-24">
         <div>
           <span className="inline-block border border-border bg-cream-dark px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.1em] text-ink/80">
-            U.S. Trademark Counsel • USPTO &amp; Madrid Protocol Representation
+            Canadian Trademark Counsel • CIPO &amp; Madrid Protocol Representation
           </span>
 
           <h1 className="mt-8 max-w-5xl font-serif text-5xl leading-[0.95] tracking-tighter text-ink sm:text-6xl lg:text-7xl xl:text-8xl">
@@ -32,7 +32,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-8 max-w-2xl text-xl leading-[1.6] text-muted sm:text-2xl">
-            Protect your brand in the U.S. and abroad. We represent entrepreneurs,
+            Protect your brand in Canada and abroad. We represent entrepreneurs,
             startups, and established companies through federal trademark filing,
             Madrid Protocol global registration, and the full life of your mark —
             from search through ten-year renewals.
