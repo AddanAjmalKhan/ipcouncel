@@ -4,9 +4,9 @@ export const siteConfig = {
   tagline: "Intellectual Property Counsel Group",
   description:
     "A boutique trademark law firm dedicated exclusively to USPTO prosecution, Madrid Protocol global filings, federal registration, TTAB proceedings, and nationwide brand protection.",
-  phone: "571-274-2218",
+  phone: "819-900-2926",
   email: "info@ipcounselgroup.org",
-  hours: "Mon–Fri, 9–6 ET",
+  hours: "Mon–Fri, 8:30–4:30 ET",
   copyright: `© ${new Date().getFullYear()} IP Counsel Group Trademark Law. Attorney Advertising.`,
   badge: "Nationwide USPTO Representation",
 };
