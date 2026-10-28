@@ -27,7 +27,10 @@ export default function ResourcesPage() {
         <Container>
           <div className="grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
             {resourceCards.map((resource) => (
-              <div key={resource.number} className="bg-cream-soft p-8">
+              <div
+                key={resource.number}
+                className="bg-cream-soft p-8 transition-colors duration-200 hover:bg-white"
+              >
                 <p className="text-xs font-medium text-muted-light">
                   {resource.number}
                 </p>
@@ -48,7 +51,7 @@ export default function ResourcesPage() {
           <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-navy">
             Frequently Asked
           </p>
-          <h2 className="mt-6 font-serif text-4xl leading-[1.1] text-ink sm:text-5xl">
+          <h2 className="mt-6 font-serif text-4xl leading-[1.0] tracking-tight text-ink sm:text-5xl lg:text-6xl">
             Common questions
           </h2>
 

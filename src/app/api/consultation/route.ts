@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { Resend } from "resend";
-import { allPracticeAreas } from "@/lib/data/practice-areas";
 
 type ConsultationPayload = {
   name?: unknown;
@@ -12,11 +11,6 @@ type ConsultationPayload = {
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-function matterLabel(slug: string) {
-  if (slug === "other") return "Other";
-  return allPracticeAreas.find((area) => area.slug === slug)?.title ?? slug;
-}
 
 export async function POST(request: Request) {
   let body: ConsultationPayload;
@@ -92,7 +86,7 @@ export async function POST(request: Request) {
           `Full Name: ${name}`,
           `Email: ${email}`,
           `Phone: ${phone || "(not provided)"}`,
-          `Legal Matter: ${matter ? matterLabel(matter) : "(not provided)"}`,
+          `Legal Matter: ${matter || "(not provided)"}`,
           "",
           "Description:",
           message || "(not provided)",

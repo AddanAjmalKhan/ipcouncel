@@ -28,7 +28,11 @@ export default function PracticeAreasPage() {
         <Container>
           <div className="grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-2">
             {allPracticeAreas.map((area) => (
-              <div key={area.slug} id={area.slug} className="scroll-mt-28 bg-cream-soft p-10">
+              <div
+                key={area.slug}
+                id={area.slug}
+                className="scroll-mt-28 bg-cream-soft p-10 transition-colors duration-200 hover:bg-white"
+              >
                 <p className="text-xs font-medium text-muted-light">
                   {area.number}
                 </p>
@@ -56,7 +60,7 @@ export default function PracticeAreasPage() {
             <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-navy">
               Flat-Fee Pricing
             </p>
-            <h2 className="mt-6 font-serif text-4xl leading-[1.1] text-ink sm:text-5xl">
+            <h2 className="mt-6 font-serif text-4xl leading-[1.0] tracking-tight text-ink sm:text-5xl lg:text-6xl">
               One clear fee for the service.
             </h2>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted">
@@ -72,7 +76,7 @@ export default function PracticeAreasPage() {
               <div
                 key={item.title}
                 className={cn(
-                  "border-border bg-cream px-8 py-10",
+                  "border-border bg-cream-soft px-8 py-10",
                   index === 0 && "border-b sm:border-r",
                   index === 1 && "border-b",
                   index === 2 && "sm:border-r"

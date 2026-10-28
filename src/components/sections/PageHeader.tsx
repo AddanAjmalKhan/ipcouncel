@@ -14,11 +14,11 @@ export default function PageHeader({ eyebrow, title, description }: PageHeaderPr
         <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-navy">
           {eyebrow}
         </p>
-        <h1 className="mt-6 max-w-3xl font-serif text-4xl leading-[1.1] text-ink sm:text-5xl">
+        <h1 className="mt-6 max-w-5xl font-serif text-5xl leading-[0.95] tracking-tighter text-ink sm:text-6xl lg:text-7xl xl:text-8xl">
           {title}
         </h1>
         {description && (
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted">
+          <p className="mt-8 max-w-3xl text-xl leading-[1.6] text-muted sm:text-2xl">
             {description}
           </p>
         )}

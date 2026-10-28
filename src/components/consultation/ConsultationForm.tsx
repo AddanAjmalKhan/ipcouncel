@@ -1,7 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { allPracticeAreas } from "@/lib/data/practice-areas";
+
+const legalMatters = [
+  "New Trademark Application",
+  "Trademark Search & Clearance",
+  "Office Action Response",
+  "Madrid Protocol / Global Filing",
+  "Renewal / Section 8",
+  "TTAB Proceeding",
+  "Brand Enforcement",
+  "Other",
+];
 
 const fieldClasses =
   "mt-3 w-full border-b border-cream/20 bg-transparent pb-3 text-sm text-cream placeholder:text-cream/30 focus:border-accent focus:outline-none";
@@ -99,14 +109,11 @@ export default function ConsultationForm() {
             <option value="" disabled className="bg-ink text-cream/50">
               Select a matter...
             </option>
-            {allPracticeAreas.map((area) => (
-              <option key={area.slug} value={area.slug} className="bg-ink text-cream">
-                {area.title}
+            {legalMatters.map((matter) => (
+              <option key={matter} value={matter} className="bg-ink text-cream">
+                {matter}
               </option>
             ))}
-            <option value="other" className="bg-ink text-cream">
-              Other
-            </option>
           </select>
         </div>
 

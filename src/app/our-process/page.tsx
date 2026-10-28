@@ -60,7 +60,7 @@ export default function OurProcessPage() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-accent">
               Global Protection
             </p>
-            <h2 className="mt-6 font-serif text-4xl leading-[1.1] sm:text-5xl">
+            <h2 className="mt-6 font-serif text-4xl leading-[1.0] tracking-tight sm:text-5xl lg:text-6xl">
               Madrid Protocol international filing.
             </h2>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-cream/60">

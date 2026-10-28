@@ -37,7 +37,7 @@ export default function OurFirmPage() {
             />
           </div>
 
-          <div className="space-y-6 text-base leading-relaxed text-muted">
+          <div className="space-y-6 text-lg leading-relaxed text-muted">
             <p>
               Whether you are filing your first trademark or managing a
               growing portfolio of brands, our legal team provides strategic
@@ -61,7 +61,7 @@ export default function OurFirmPage() {
 
       <section className="bg-cream py-20 lg:py-28">
         <Container>
-          <h2 className="font-serif text-3xl leading-[1.1] text-ink sm:text-4xl">
+          <h2 className="font-serif text-4xl leading-[1.05] tracking-tight text-ink sm:text-5xl">
             Our attorneys regularly assist with
           </h2>
 

@@ -17,11 +17,11 @@ export default function CtaBanner({
   return (
     <section className="bg-cream-soft py-20 lg:py-28">
       <Container className="flex flex-col items-center text-center">
-        <h2 className="max-w-2xl font-serif text-4xl leading-[1.1] text-ink sm:text-5xl">
+        <h2 className="max-w-3xl font-serif text-4xl leading-[1.0] tracking-tight text-ink sm:text-5xl lg:text-6xl">
           {title}
         </h2>
         {description && (
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted">
+          <p className="mt-6 max-w-xl text-lg leading-[1.6] text-muted sm:text-xl">
             {description}
           </p>
         )}

@@ -8,11 +8,11 @@ export default function CommitmentSection() {
       <Container className="grid grid-cols-1 gap-12 py-20 lg:grid-cols-[1fr_1.3fr] lg:gap-16 lg:py-28">
         <div>
           <SectionLabel number="00" label="Our Commitment" variant="accent" />
-          <h2 className="mt-6 font-serif text-4xl leading-[1.1] sm:text-5xl">
+          <h2 className="mt-6 font-serif text-4xl leading-[1.0] tracking-tight sm:text-5xl lg:text-6xl">
             Once your application is filed,{" "}
             <em className="italic">we take over.</em>
           </h2>
-          <p className="mt-6 max-w-sm text-sm leading-relaxed text-cream/60">
+          <p className="mt-6 max-w-sm text-base leading-relaxed text-cream/60">
             You focus on your business. We handle every USPTO letter, every
             deadline, and every renewal for the life of your mark.
           </p>

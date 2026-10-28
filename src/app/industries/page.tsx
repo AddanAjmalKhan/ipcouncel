@@ -26,7 +26,10 @@ export default function IndustriesPage() {
         <Container>
           <div className="grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
             {industryDetails.map((industry) => (
-              <div key={industry.number} className="bg-cream-soft p-8">
+              <div
+                key={industry.number}
+                className="bg-cream-soft p-8 transition-colors duration-200 hover:bg-white"
+              >
                 <p className="text-xs font-medium text-muted-light">
                   {industry.number}
                 </p>
