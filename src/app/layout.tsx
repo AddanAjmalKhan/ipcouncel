@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | IP Counsel Group",
   },
   description:
-    "America's trusted trademark attorneys. We represent entrepreneurs, startups, and established companies through federal trademark filing, Madrid Protocol global registration, and the full life of your mark.",
+    "Canada's trusted trademark attorneys. We represent entrepreneurs, startups, and established companies through federal trademark filing, Madrid Protocol global registration, and the full life of your mark.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

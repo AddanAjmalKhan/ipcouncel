@@ -27,7 +27,7 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-8 max-w-5xl font-serif text-5xl leading-[0.95] tracking-tighter text-ink sm:text-6xl lg:text-7xl xl:text-8xl">
-            America&apos;s Trusted{" "}
+            Canada&apos;s Trusted{" "}
             <em className="italic text-ink">Trademark</em> Attorneys
           </h1>
 
