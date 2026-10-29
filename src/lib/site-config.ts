@@ -5,7 +5,7 @@ export const siteConfig = {
   description:
     "A boutique trademark law firm dedicated exclusively to trademark prosecution, Madrid Protocol global filings, federal registration, Trademarks Opposition Board proceedings, and nationwide brand protection.",
   phone: "819-900-2926",
-  email: "info@ipcounselgroup.org",
+  email: "info@internationalipcounsel.com",
   hours: "Mon–Fri, 8:30–4:30 ET",
   copyright: `© ${new Date().getFullYear()} IP Counsel Group Trademark Law. Attorney Advertising.`,
   badge: "Nationwide Representation",

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
 type ConsultationPayload = {
   name?: unknown;
@@ -71,14 +71,23 @@ export async function POST(request: Request) {
     );
   }
 
-  const resendApiKey = process.env.RESEND_API_KEY;
+  const smtpHost = process.env.SMTP_HOST;
+  const smtpPort = process.env.SMTP_PORT;
+  const smtpUser = process.env.SMTP_USER;
+  const smtpPassword = process.env.SMTP_PASSWORD;
   const notificationEmail = process.env.CONSULTATION_NOTIFICATION_EMAIL;
 
-  if (resendApiKey && notificationEmail) {
+  if (smtpHost && smtpPort && smtpUser && smtpPassword && notificationEmail) {
     try {
-      const resend = new Resend(resendApiKey);
-      await resend.emails.send({
-        from: "IP Counsel Group Website <onboarding@resend.dev>",
+      const transporter = nodemailer.createTransport({
+        host: smtpHost,
+        port: Number(smtpPort),
+        secure: Number(smtpPort) === 465,
+        auth: { user: smtpUser, pass: smtpPassword },
+      });
+
+      await transporter.sendMail({
+        from: `IP Counsel Group Website <${smtpUser}>`,
         to: notificationEmail,
         replyTo: email,
         subject: `New consultation request — ${name}`,
@@ -95,7 +104,7 @@ export async function POST(request: Request) {
     } catch (emailError) {
       // The submission is already saved in Supabase, so we don't fail the
       // request just because the notification email couldn't be sent.
-      console.error("Resend email failed:", emailError);
+      console.error("SMTP email failed:", emailError);
     }
   }
 
