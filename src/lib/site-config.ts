@@ -19,6 +19,8 @@ export type NavLink = {
 export const mainNavLinks: NavLink[] = [
   { label: "Practice Areas", href: "/practice-areas" },
   { label: "Our Process", href: "/our-process" },
+  { label: "Canada", href: "/canada-trademark-process" },
+  { label: "Global", href: "/global-trademark-process" },
   { label: "Industries", href: "/industries" },
   { label: "Resources", href: "/resources" },
   { label: "Our Firm", href: "/our-firm" },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageHeader from "@/components/sections/PageHeader";
 import FaqAccordion from "@/components/resources/FaqAccordion";
 import Container from "@/components/ui/Container";
@@ -26,22 +27,37 @@ export default function ResourcesPage() {
       <section className="bg-cream-soft py-20 lg:py-28">
         <Container>
           <div className="grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
-            {resourceCards.map((resource) => (
-              <div
-                key={resource.number}
-                className="bg-cream-soft p-8 transition-colors duration-200 hover:bg-white"
-              >
-                <p className="text-xs font-medium text-muted-light">
-                  {resource.number}
-                </p>
-                <h3 className="mt-4 text-lg font-semibold text-ink">
-                  {resource.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {resource.description}
-                </p>
-              </div>
-            ))}
+            {resourceCards.map((resource) => {
+              const cardClasses =
+                "bg-cream-soft p-8 transition-colors duration-200 hover:bg-white";
+              const content = (
+                <>
+                  <p className="text-xs font-medium text-muted-light">
+                    {resource.number}
+                  </p>
+                  <h3 className="mt-4 text-lg font-semibold text-ink">
+                    {resource.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">
+                    {resource.description}
+                  </p>
+                </>
+              );
+
+              return resource.href ? (
+                <Link
+                  key={resource.number}
+                  href={resource.href}
+                  className={cardClasses}
+                >
+                  {content}
+                </Link>
+              ) : (
+                <div key={resource.number} className={cardClasses}>
+                  {content}
+                </div>
+              );
+            })}
           </div>
         </Container>
       </section>

@@ -2,6 +2,7 @@ export type ResourceCard = {
   number: string;
   title: string;
   description: string;
+  href?: string;
 };
 
 export const resourceCards: ResourceCard[] = [
@@ -22,12 +23,14 @@ export const resourceCards: ResourceCard[] = [
     title: "Filing Process Explained",
     description:
       "Step-by-step walkthrough of what happens after your application is filed.",
+    href: "/canada-trademark-process",
   },
   {
     number: "04",
     title: "Madrid Protocol Guide",
     description:
       "How to extend Canadian trademark protection to 130+ countries through one WIPO filing.",
+    href: "/global-trademark-process",
   },
   {
     number: "05",
